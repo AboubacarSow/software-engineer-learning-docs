@@ -200,8 +200,25 @@ Used for:
 * regression
 
 ---
+### 6.3 Semi-Supervised Learning
 
-### 6.2 Unsupervised Learning
+* Dataset contains a small amount of labeled data and a large amount of unlabeled data
+* Goal: learn a function f(x) ≈ y by leveraging structure found in unlabeled data
+
+Key idea:
+
+* Unlabeled data helps shape the representation of the problem, while labeled data anchors it to the task.
+
+Used for:
+
+* image classification with limited annotations
+* speech and text tasks where labeling is expensive
+* large-scale industrial ML systems
+
+Semi-supervised learning sits between supervised and unsupervised learning and reflects real-world constraints where labels are costly but raw data is abundant.
+
+---
+### 6.3 Unsupervised Learning
 
 * Dataset contains **no labels**
 * Goal: discover structure in data
@@ -216,7 +233,7 @@ Unsupervised learning is closer to **compression and pattern discovery** than pr
 
 ---
 
-### 6.3 Reinforcement Learning
+### 6.4 Reinforcement Learning
 
 * An agent interacts with an environment
 * Actions influence future states
